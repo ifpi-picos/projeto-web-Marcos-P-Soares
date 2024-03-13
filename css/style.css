@@ -174,7 +174,8 @@ main{
     filter: brightness(70%);
 }
 .servicos img{
-    height: 50vh;
+    height: 15em;
+    width: 15em;
     border-radius: 50%;
     border: 1px solid #592202;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
@@ -194,10 +195,28 @@ main{
     background-color: var(--cor-secundária-escura);
 }
 
+.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cta h2{
+    display: flex;
+}
+.cta a{
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.cta img{
+    width: 2rem;
+}
 
 .formulario button{
     border: 2px solid black;
-    color: var(--cor-escura);
+    color: var(--preto);
+    background-color: var(--cor-primaria);
     font-size: 1rem;
     padding: .50rem;
     max-width: 18rem;
@@ -231,7 +250,12 @@ textarea {
 /* FOOTER */
 
 .footer{
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-escura);
     display: flex;
     justify-content: center;
+    color: var(--branco);
+}
+
+.footer a{
+    color: var(--branco);
 }
