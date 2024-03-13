@@ -273,13 +273,13 @@ textarea {
 
 /* FOOTER */
 
+.footer a{
+    color: var(--branco);
+}
+
 .footer{
     background-color: var(--cor-escura);
     display: flex;
     justify-content: center;
-    color: var(--branco);
-}
-
-.footer a{
     color: var(--branco);
 }
