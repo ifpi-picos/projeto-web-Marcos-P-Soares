@@ -108,7 +108,7 @@ main{
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url(/images/_7276a4c2-cd9a-4384-9ce8-2796e9419d9a.jpg);
+            background-image: url(/images/background.webp);
             background-size: cover;
             background-position: center;
             filter: saturate(0.5); /* Aqui está o filtro de saturação, ajuste conforme necessário */
@@ -204,19 +204,23 @@ main{
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 15px;
+    border-radius: 10px;
+    font-family: "Cormorant Garamond", serif;
 }
 
 
 input[type="text"],
 input[type="email"],
 textarea {
-    font-size: 1rem;
+    font-size: 1.2rem;
     width:80%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 textarea {
