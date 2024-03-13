@@ -164,6 +164,7 @@ main{
 .servicos a{
     text-decoration: none;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     color: var(--preto);
@@ -184,8 +185,8 @@ main{
 }
 
 .servicos img{
-    height: 15em;
-    width: 15em;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     transition: filter 0.3s ease;
