@@ -41,7 +41,13 @@ header{
     height: 10%; 
     width: 100%;
     background-color: var(--cor-primaria);
+    z-index: 999;
 }
+
+header span {
+    display: none;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -52,11 +58,11 @@ header{
     padding: 10px 20px;
     height: 8%;
     width: 100%;
-    z-index: 999;
 }
 
 .logo {
-    height: 100%;
+    height: 80%;
+    margin-left: 2%;
 }
 
 .logo img {
@@ -120,6 +126,7 @@ main{
     justify-content: center;
     max-width: 100%;
     height: 100vh;
+    margin: 0 2%;
 }
 
 .conteudo-main h1{
@@ -160,7 +167,7 @@ main{
 .servicos a{
     text-decoration: none;
     display: flex;
-    /* flex-wrap: wrap; */
+
     flex-direction: column;
     align-items: center;
     color: var(--preto);
@@ -253,7 +260,7 @@ input[type="text"],
 input[type="email"],
 textarea {
     font-size: 1.2rem;
-    width:80%;
+    width:100%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -280,3 +287,51 @@ textarea {
     justify-content: center;
     color: var(--branco);
 }
+
+.footer p{
+    text-align: center;
+}
+
+
+
+/* Media Query */
+
+
+@media only screen and (max-width: 525px){
+
+    nav{
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    header span {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+    header span img{
+        width: 50px;
+        height: 40px;
+    }
+
+    .logo{
+        margin-top: 0.5rem;
+    }
+    
+    
+    nav.mobile {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .conteudo-main h1{
+        font-size: 4em;
+    }
+}
+
